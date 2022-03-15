@@ -38,5 +38,10 @@ lsp_installer.on_server_ready(function(server)
     opts = vim.tbl_deep_extend("force", rust_analyzer_opts, opts)
   end
 
+  if server.name == "tsserver" then
+    local tsserver_opts = require("user.lsp.settings.tsserver")
+    opts = vim.tbl_deep_extend("force", tsserver_opts, opts)
+  end
+
   server:setup(opts)
 end)
