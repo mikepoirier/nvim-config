@@ -45,11 +45,11 @@ local Terminal = require("toggleterm.terminal").Terminal
 --   lazygit:toggle()
 -- end
 
-local node = Terminal:new({ cmd = "node", hidden = true })
-
-function _NODE_TOGGLE()
-  node:toggle()
-end
+-- local node = Terminal:new({ cmd = "node", hidden = true })
+--
+-- function _NODE_TOGGLE()
+--   node:toggle()
+-- end
 
 -- local ncdu = Terminal:new({ cmd = "ncdu", hidden = true })
 --
@@ -57,9 +57,9 @@ end
 --   ncdu:toggle()
 -- end
 
-local btm = Terminal:new({ cmd = "btm", hidden = true })
-
-function _BTM_TOGGLE()
-  btm:toggle()
-end
+-- local btm = Terminal:new({ cmd = "btm", hidden = true })
+--
+-- function _BTM_TOGGLE()
+--   btm:toggle()
+-- end
 
