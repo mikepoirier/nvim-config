@@ -47,6 +47,8 @@ return packer.startup(function(use)
   use "windwp/nvim-autopairs"
   use "numToStr/Comment.nvim"
   use "akinsho/toggleterm.nvim"
+  use "kyazdani42/nvim-web-devicons"
+  use "kyazdani42/nvim-tree.lua"
 
   -- Colorschemes
   -- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out

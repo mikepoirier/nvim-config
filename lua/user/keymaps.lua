@@ -25,8 +25,6 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
-
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
@@ -78,3 +76,6 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown())<CR>", opts)
 keymap("n", "<C-t>", "<cmd>Telescope live_grep<CR>", opts)
 keymap("n", "<leader>m", "lua require('telescope').extensions.media_files.mediafiles()", opts)
+
+-- Nvim tree
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
